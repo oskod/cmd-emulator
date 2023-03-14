@@ -1,20 +1,38 @@
 * {
+	font-family: Consolas;
 	color: white;
 }
 
 body {
-	font-family: Consolas;
 	background: black;
 	color: white;
 	margin: 5vh;
 }
 
-p {
+#return {
+	color: #999;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+	text-decoration: none;
+	transition: color 0.25s, letter-spacing 0.25s;
+}
+#return:hover {
+	color: #fff;
+	letter-spacing: 1px;
+}
+#return:active {
+	color: #aaf;
+	letter-spacing: -1px;
+}
+
+p, pre {
 	margin: 2px 20px;
 }
 
 #current::before {
-	content: ">";
+	content: "$";
 	position: absolute;
 	margin-left: -20px;
 }
